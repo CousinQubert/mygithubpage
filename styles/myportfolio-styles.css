@@ -7,12 +7,27 @@ a {
   cursor:pointer;
 }
   
-a:hover {
+a > img:hover {
   color:white;
+}
+
+a:hover {
+  background-color:#eee;
+  color:#333;
+  text-decoration: none;
+}
+
+blockquote{
+  font-style: italic;
 }
 
 .three-link-mod {}
 
+#large-image {
+  max-width: 50%;
+  display: block;
+  margin: auto;
+}
 .my-head {
   max-width:100%;
   height:auto;
@@ -33,6 +48,12 @@ a:hover {
   width: 100%;
  }
 
+.outer-2 { 
+  /*outline: 1px solid #eee;*/
+  display: table;
+  width: 100%;
+ }
+
 .outer > h2 {
   display: table-cell;
   height:100vh;
@@ -40,9 +61,22 @@ a:hover {
   text-align: center;
 }
 
-.outer > p {
+.outer > div.row {
   display: table-cell;
   height:100vh;
+  vertical-align: middle;
+  /*text-align: center;*/
+}
+
+.about-content {
+  display: block;
+  text-align: left;
+  vertical-align: top;
+}
+
+.outer-2 > div.inner-special {
+  display: table-cell;
+  height:90vh;
   vertical-align: middle;
   text-align: center;
 }
@@ -72,23 +106,6 @@ a:hover {
   color: #333;
 }
 
-/*div#slider figure { 
-  position: relative;
-  width: 500%;
-  margin: 0;
-  left: 0;
-  text-align: left;
-  font-size: 0;
-  animation: 30s slidy infinite; 
-}
-
-#slide1 {
-  background:url(../images/picture-68321.jpg);
-  margin:auto;
-  height:572px;
-  width:1000px;
-}
-*/
 .skill-box{
   border:solid .5px;
   border-radius:5px;
