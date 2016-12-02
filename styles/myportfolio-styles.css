@@ -74,6 +74,12 @@ blockquote{
   vertical-align: top;
 }
 
+.projects-content {
+  display: block;
+  text-align: left;
+  vertical-align: top;
+}
+
 .outer-2 > div.inner-special {
   display: table-cell;
   height:90vh;

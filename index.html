@@ -17,6 +17,7 @@
 </head>
 
 <body>
+<div style="display:none">
       <nav class="navbar navbar-default">
         <div class="container-fluid">
           <!-- Brand and toggle icon get grouped for better mobile display -->
@@ -46,6 +47,7 @@
         <!-- /.container-fluid -->
       </nav>
       <!-- Closes navbar section -->
+</div>
 
       <!-- page content -->
       <!-- Main header -->
@@ -102,11 +104,13 @@
   </div>
   <!-- First Section End -->
 
-  <!-- About me Sections -->
+  <!-- About me face -->
   <div class="container-fluid outer">
     <h2 class="text-center" id="about-divider">About</h2>
     <!--<hr/> -->
   </div>
+ 
+  <!-- About me content -->
   <div class="container-fluid outer">
   <div class="row">
 
@@ -120,20 +124,38 @@
 
     <img class="img-responsive" id="large-image" src="images/me-and-mama.jpg" alt="A picture of me and my mama"/>
   </div>
-<!-- 
-  <div class="row">
-    <blockquote>
-    <p>Jacob, no quiero que te sientas en la computadora esta tarde...</p>
-    </blockquote>
-  </div> -->
-    <!--<hr/> -->
   </div>
 
-  <!-- Projects Section -->
+  <!-- Projects section face -->
   <div class="container-fluid outer">
     <h2 class="text-center" id="projects">Projects</h2>
   </div>
 
+  <!-- Projects content -->
+  <div class="container-fluid outer">
+    <div class="row">
+
+      <!-- <h4 class="section-subtitle">Shalom, it's me Jacob Maldonado Nofziger.</h4> -->
+      
+      <p id="projects-content">I strive to improve my skills outside of work. I have recently started tracking those projects<a href="https://github.com/u/leatheronly"> on github.</a> Here are a few highlights of my WordPress design work.</p>
+      
+      <!-- <blockquote class="blockquote-reverse">
+      <p>Jacob, no quiero que te sientes en la computadora esta tarde...</p>
+      <footer>My Mama</footer>
+      </blockquote> -->
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-6 col-lg-4">
+            <p class="skill-box text-center">Mennonite.net</p>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <p class="skill-box text-center">Other Site</p>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
 
 <!--   <div class="container-fluid" id="slider">
     <h2>What used to be the slider</h2>
@@ -141,10 +163,11 @@
     </div>
   </div>
  -->
-
-  <div class="container-fluid">
+   <!-- Experience section face -->
+  <div class="container-fluid outer">
     <h2 class="text-center" id="experience">Experience</h2>
   </div>
+
   <!-- Work Collage -->
   <div class="container-fluid">
     <div class="row">
@@ -178,12 +201,12 @@
   <!-- Contact form -->
   <div class="container-fluid">
     <h2 class="text-center" id="learn-more">Learn More</h2>
+  
+    <form class="something" role="search">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Search">
+      </div>
+      <button type="submit" class="btn btn-default"></button>
+    </form>
   </div>
-  <form class="something" role="search">
-    <div class="form-group">
-      <input type="text" class="form-control" placeholder="Search">
-    </div>
-    <button type="submit" class="btn btn-default">Learn More</button>
-  </form>
-
 </body>
