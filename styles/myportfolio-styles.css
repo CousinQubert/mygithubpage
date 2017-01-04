@@ -2,7 +2,14 @@
 
 body {
   margin:0 4%;
+  line-height: 1.7em;
   font-size: 16px;
+}
+
+h1,h2,h3,h4,p,blockquote {
+  margin-bottom: 1.4em !important;
+  max-width:786px;
+  margin:0 auto;
 }
 
 a { 
