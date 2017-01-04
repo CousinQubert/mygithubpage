@@ -1,6 +1,9 @@
 * { font-family: 'Maven Pro', sans-serif;}
 
-body {margin:0px;}
+body {
+  margin:0 4%;
+  font-size: 16px;
+}
 
 a { 
   color: #333;
@@ -43,7 +46,7 @@ blockquote{
 }
 
 .outer { 
-  outline: 1px solid #eee;
+  /*outline: 1px solid #eee;*/
   display: table;
   width: 100%;
  }
@@ -86,6 +89,8 @@ blockquote{
   vertical-align: middle;
   text-align: center;
 }
+
+input {margin-bottom: 10px;}
 
 #blurb { margin-bottom: 15px; }
 
