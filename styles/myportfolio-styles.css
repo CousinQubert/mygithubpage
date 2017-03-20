@@ -130,7 +130,8 @@ input {margin-bottom: 10px;}
 .skill-box{
   border:solid .5px;
   border-radius:5px;
-  height: 150px;
+  height: auto;
+  margin-bottom: 1.4em;
   padding: 10px;
 }
 
