@@ -1,223 +1,174 @@
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-
-  <!-- Link my own css sheet to this document -->
-  <link rel="stylesheet" href="styles/myportfolio-styles.css">
-
-  <link href='https://fonts.googleapis.com/css?family=Maven+Pro' rel='stylesheet' type='text/css'>
-  <!-- Latest compiled JS -->
-  <!-- <script src="bootstrap/js/bootstrap.min.js"></script> -->
-
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Jacob M. Nofziger - WebDev</title>
-</head>
-
-<body>
-<div style="display:none">
-      <nav class="navbar navbar-default">
-        <div class="container-fluid">
-          <!-- Brand and toggle icon get grouped for better mobile display -->
-          <div class="navbar-header">
+  <head>
+    <!-- CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <!-- Link my own css sheet to this document -->
+    <link rel="stylesheet" href="styles/myportfolio-styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Maven+Pro' rel='stylesheet' type='text/css'>
+    <!-- Latest compiled JS -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jacob M. Nofziger - WebDev</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-static-top">
+      <div class="container">
+        <!-- Brand and toggle icon get grouped for better mobile display -->
+        <div class="navbar-header">
             <!-- Menu icon -->
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
-          </button>
-            <!-- Brand -->
-            <a class="navbar-brand" href="#">Web Development and More</a>
-          </div>
+            </button>
+              <!-- Brand --></div>
+        <div id="bs-example-navbar-collapse-1" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#projects" style="color:#e8d164">Projects</a></li>
+            <li><a href="#experience" style="color:#e8d164">Experience</a></li>
+            <li><a href="#learn-more" style="color:#e8d164">Learn More</a></li>
+          </ul></div>
+      </div>
+    </nav>
 
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right">
-              <li><a href="#projects">Projects</a></li>
-              <li role="separator" class="divider"></li>
-              <li><a href="#experience">Experience</a></li>
-              <li><a href="#learn-more">Learn More</a></li>
+    <div class="container-fluid">
+      <div class="row text-center white-row">
+        <div class="col-sm-8 col-sm-offset-2">
+          <img class="my-head" alt="jacob-maldonado-nofziger" src="images/picture-68321.jpg" />
+          <h1>Jacob Maldonado Nofziger</h1>
+          <h3>System Administrator</h3>
+          <h4>< Web development, system administration, and the odyssey of continuing studies. /></h4>
+        </div>
+      </div>
+
+      <div class="row gray-row">
+        <h4 class="section-subtitle">Shalom, it's me Jacob Maldonado Nofziger.</h4>
+        <p id="about-content"><a href="http://jmnofziger.github.io/blog">I like computers, music, and good company.</a> My parents have encouraged me to pursue a career in technology since my youth. They would set up restricted schedules on computer time so that I would learn to crave the computer even more. They would hide the modem so that I'd learn to configure a flash game so that I could play it offline. It all started there. Thanks Mom and Dad.</p>
+        <blockquote class="blockquote-reverse">
+          <p>Jacob, no quiero que te sientes en la computadora esta tarde...</p>
+          <footer>My Mama</footer>
+        </blockquote>
+        <img class="img-responsive" id="large-image" src="images/me-and-mama.jpg" alt="A picture of me and my mama"/>
+      </div>
+
+      <div class="row white-row">
+        <h2 class="text-center" id="projects">< Projects ></h2>
+      <!-- Projects content -->
+          <p id="projects-content">I strive to improve my skills outside of work. I have recently started <a href="https://github.com/jmnofziger">tracking those projects on github.</a> </p>
+          
+              <div class="col-sm-6 col-lg-4 col-lg-offset-1">
+                <div class="skill-box">
+                  <p class="text-center">Mennonite.net</p>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-lg-4 col-lg-offset-1">
+                <div class="skill-box">
+                  <p class="text-center">Random Quote Generator</p>
+                  <ul>
+                  User Stories
+                    <ul>
+                      <li><em>I can click a button to show me a new random quote.</em></li>
+                      <li><em>I can press a button to tweet out a quote.</em></li>
+                    </ul>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-lg-4 col-lg-offset-1">
+                <div class="skill-box">
+                  <p class="text-center">Random Quote Generator</p>
+                  <ul>
+                  User Stories
+                    <ul>
+                      <li><em>I can click a button to show me a new random quote.</em></li>
+                      <li><em>I can press a button to tweet out a quote.</em></li>
+                    </ul>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-lg-4 col-lg-offset-1">
+                <div class="skill-box">
+                  <p class="text-center">Local Weather App</p>
+                  <ul>User Stories
+                    <ul>
+                      <li><em>I can see the weather in my current location.</em></li>
+                      <li><em>I can see a different icon or background image depending on the weather.</em></li>
+                      <li><em>I can push a button to toggle between Fahrenheit and Celsius</em></li>
+                    </ul>
+                  </ul>
+                </div>
+              </div>
+        </div>
+      <div class="row gray-row">
+        <h2 class="text-center" id="experience">< Experience ></h2>
+          <!-- Work Collage -->
+        <div class="col-sm-6 col-lg-4">
+          <div class="skill-box">
+            <p class="text-center">Salesforce Work</p>
+            <ul>
+              <li>Prepared client's customer records and executed migration from third party databases</li>
+              <li>Configured Salesforce installations for client needs</li>
             </ul>
           </div>
-          <!-- /.navbar-collapse -->
         </div>
-        <!-- /.container-fluid -->
-      </nav>
-      <!-- Closes navbar section -->
-</div>
 
-      <!-- page content -->
-      <!-- Main header -->
-<div class="container-fluid outer-2">
-  <div class="inner-special">
-    <div class="container-fluid">
-        <div class="row">
-          <div class="col-sm-12 text-left">
-            <h2 class="text-center">Jacob Maldonado Nofziger</h2>
-          </div>
-        </div>
-      </div>
-      <!-- First section - Head, blurb, and three links -->
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-sm-8 col-sm-offset-2">
-            <div class="col-sm-8">
-
-              <!-- Head -->
-              <div class="col-xs-12 text-center">
-                <img class="my-head" src="images/picture-68321.jpg" />
-              </div>
-
-              <!-- Blurb -->
-              <div id="blurb" class="col-xs-12 text-center">
-                <h4 class="text-center">Web development, system administration, and the odyssey of continuing studies.</h4>
-              </div>
-
-            </div>
-
-            <!-- Three Social Media Link Modules -->
-            <div class="col-sm-4 three-link-mod">
-              <!-- CodePen Module -->
-              <div class="col-xs-4 col-sm-12 text-center">
-                <a href="https://codepen.io/Shredderz/"><img class="feature-modules" src="images/codepen-256-black.png" /></a>
-                <h6>CodePen</h6>
-              </div>
-              <!-- LinkedIn Module -->
-              <div class="col-xs-4 col-sm-12 text-center">
-                <a href="https://www.linkedin.com/in/jacobmnofziger"><img class="feature-modules" src="images/linkedin_256.png" /></a>
-                <h6>LinkedIn</h6>
-              </div>
-              <!-- GitHub Module -->
-              <div class="col-xs-4 col-sm-12 text-center">
-                <a href="https://github.com/CousinQubert"><img class="feature-modules" src="images/github.png" /></a>
-                <h6>GitHub</h6>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- First Section End -->
-
-  <!-- About me face -->
-  <!-- <div class="container-fluid outer"> -->
-    <!-- <h2 class="text-center" id="about-divider">About</h2> -->
-    <!--<hr/> -->
-  <!-- </div> -->
- 
-  <!-- About me content -->
-  <div class="container-fluid outer">
-  <div class="row">
-
-    <h4 class="section-subtitle">Shalom, it's me Jacob Maldonado Nofziger.</h4>
-    
-    <p id="about-content"><a href="http://jmnofziger.github.io/blog">I like computers, music, and good company.</a> My parents have encouraged me to pursue a career in technology since my youth. They would set up restricted schedules on computer time so that I would learn to crave the computer even more. They would hide the modem so that I'd learn to configure a flash game so that I could play it offline. It all started there. Thanks Mom and Dad.</p>
-    <blockquote class="blockquote-reverse">
-    <p>Jacob, no quiero que te sientes en la computadora esta tarde...</p>
-    <footer>My Mama</footer>
-    </blockquote>
-
-    <img class="img-responsive" id="large-image" src="images/me-and-mama.jpg" alt="A picture of me and my mama"/>
-  </div>
-  </div>
-
-  <!-- Projects section face -->
-  <div class="container-fluid outer">
-    <h2 class="text-center" id="projects">Projects</h2>
-  </div>
-
-  <!-- Projects content -->
-  <div class="container-fluid outer">
-    <div class="row">
-
-      <!-- <h4 class="section-subtitle">Shalom, it's me Jacob Maldonado Nofziger.</h4> -->
-      
-      <p class="text-center" id="projects-content">I strive to improve my skills outside of work. I have recently started tracking those projects<a href="https://github.com/u/jmnofziger"> on github.</a> Here are a few highlights of my WordPress design work.</p>
-      
-      <!-- <blockquote class="blockquote-reverse">
-      <p>Jacob, no quiero que te sientes en la computadora esta tarde...</p>
-      <footer>My Mama</footer>
-      </blockquote> -->
-      <div class="container-fluid">
-
-        <div class="row">
-          <div class="col-sm-6 col-lg-4 col-lg-offset-1">
-            <p class="skill-box text-center">Mennonite.net</p>
-          </div>
-          <div class="col-sm-6 col-lg-4 col-lg-offset-1">
-            <p class="skill-box text-center">Other Site</p>
+        <div class="col-sm-6 col-lg-4">
+          <div class="skill-box">
+            <p class="text-center">Implementation of LetsEncrypt</p>
+            <ul>
+              <li>Closely read documentation to configure LetsEncrypt in a manner that worked with our server stack</li>
+              <li>Developed BASH scripts for the automatic renewal of LetsEncrypt SSL certificates</li>
+            </ul>
           </div>
         </div>
 
-      </div>      
-    
-    </div>
-  </div>
-
-<!--   <div class="container-fluid" id="slider">
-    <h2>What used to be the slider</h2>
-    <div class="row">
-    </div>
-  </div>
- -->
-   <!-- Experience section face -->
-  <div class="container-fluid outer">
-    <h2 class="text-center" id="experience">Experience</h2>
-  </div>
-
-  <!-- Work Collage -->
-  <div class="container-fluid">
-    
-    <div class="row">
-      <div class="col-sm-6 col-lg-4">
-        <div class="skill-box">
-          <p class="text-center">Linux Server Stack Administrator</p>
-          <ul>
-            <li>Maintained critical server infrastructure for hosting of 130+ client websites</li>
-            <li>Pioneered new customer support ticketing system to track issues and response time</li>
-            <li>Led the implementation of free SSL certificate feature on client websites using LetsEncrypt</li>
-          </ul>
+        <div class="col-sm-6 col-lg-4">
+          <div class="skill-box">  
+            <p class="text-center">Linux Server Stack Administrator</p>
+            <ul>
+              <li>Maintained critical server infrastructure for hosting of 130+ client websites</li>
+              <li>Pioneered new customer support ticketing system to track issues and response time</li>
+              <li>Led the implementation of free SSL certificate feature on client websites using LetsEncrypt</li>
+            </ul>
+          </div>
         </div>
-      </div>
-      <div class="col-sm-6 col-lg-4">
-        <p class="skill-box text-center">Salesforce Install and Maintenance </p>
-      </div>
-      <div class="col-sm-6 col-lg-4">
-        <p class="skill-box text-center">Implementation of LetsEncrypt</p>
-      </div>
-      <div class="col-sm-6 col-lg-4">
-        <p class="skill-box text-center">Malicious Script Cleanup</p>
-      </div>
-      <div class="col-sm-6 col-lg-4">
-        <p class="skill-box text-center">Front-end Development</p>
-      </div>
-      <div class="col-sm-6 col-lg-4">
-        <p class="skill-box text-center">Front-end Development</p>
-      </div>
-    </div>
-    <!-- <hr/>
-    <h2 class="text-center">At other times a chaotic mess is more fun...</h2>  --> 
-    
-    <!-- Insert svg animation of blinking hippo here -->
-    <!-- <h6 class="text-center">Take a look at my zoo...</h6> -->
-  </div>
 
-  <!-- Contact form -->
-  <div class="container-fluid">
-    <h2 class="text-left" id="learn-more">Contact Me</h2>
-  
-    <form class="contact" role="search">
-      <div class="form-group">
-        <input type="text" class="form-control" placeholder="Name">
-        <input type="Email" class="form-control" placeholder="Email Address">
-      </div>
-      <button type="submit" class="btn btn-default">Get My Attention</button>
-    </form>
-  </div>
+        <div class="col-sm-6 col-lg-4">
+          <div class="skill-box">
+            <p class="text-center">Malicious Script Cleanup</p>
+            <ul>
+              <li>Identified malicous intrusions and helped develop scripts for cleanup and damage mitigation</li>
+              <li>Identified PHP plugins that exposed WordPress sites to intrusions and made recommendations for replacements</li>
+            </ul>
+          </div>
+        </div>
 
-</body>
+        <div class="col-sm-6 col-lg-4">
+          <div class="skill-box">
+            <p class="text-center">Front-end Development</p>
+            <ul>
+              <li>Customized WordPress themes to meet customer needs</li>
+              <li>Proficient JS</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Contact section -->
+      <div class="row text-center">
+        <h2 id="learn-more">Contact Me</h2>
+        <a href="https://codepen.io/Shredderz/"><img alt="codepen" class="feature-modules" src="images/codepen-256-black.png"/></a>
+        <a href="https://www.linkedin.com/in/jacobmnofziger"><img alt="linkedin" class="feature-modules" src="images/linkedin_256.png"/></a>
+        <a href="https://github.com/CousinQubert"><img alt="github" class="feature-modules" src="images/github.png"/></a>
+      </div>
+    </div>  
+  </body>
+</html>

@@ -1,28 +1,47 @@
-* { font-family: 'Maven Pro', sans-serif;}
-
-body {
+* { 
+  font-family: 'Maven Pro', sans-serif;
+  color:#333;
   line-height: 1.7em;
   font-size: 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1,h2,h3,h4,h5{
+  color: #222534;
 }
 
 h1,h2,h3,h4,p,blockquote {
-  margin-bottom: 1.4em !important;
   max-width:786px;
-  margin:0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-a { 
+a{
+  color: #e8d164;
+  cursor:pointer;
+}
+
+p > a { 
+  padding: 4px;
   color: #333;
   cursor:pointer;
+  border-bottom:4px solid #e8d164;
+}
+
+a > img{
+  font-weight: none;
 }
   
 a > img:hover {
   color:white;
+  font-weight: none;
 }
 
-a:hover {
+p > a:hover {
   background-color:#eee;
   color:#333;
+  font-weight: bold;
   text-decoration: none;
 }
 
@@ -30,51 +49,49 @@ blockquote{
   font-style: italic;
 }
 
-.three-link-mod {}
 
-#large-image {
-  max-width: 50%;
-  display: block;
-  margin: auto;
+@media (max-width: 830px) { 
+  h1,h2,h3,h4,p,blockquote{
+    margin-right:30px;
+    margin-left:30px;
+  }
+}
+
+@media(min-width: 2000px){
+  body{margin:0 4%;}
+}
+.blockquote-reverse{
+  border-right:5px solid #f8f8f8;
+}
+
+.row{
+  padding-bottom:26px;
+  padding-top: 26px;
+}
+
+.gray-row{
+  background-color:#cbcedd;
+}
+
+.three-link-mod {}
+.icon-bar,.navbar{background-color: #222534}
+.navbar-toggle,.white-row{
+  background-color: #f8f8f8;
 }
 .my-head {
-  max-width:100%;
+  max-width:200px;
   height:auto;
   border-radius:50%;
-  padding:24px;
+  box-shadow: 0px 4px 6px 2px lightgrey;
 }
 
 .feature-modules {
-  max-width:75%;
-  height:auto;
+  width:auto;
+  height:70px;
   border-radius:50%;
   border: solid;
-}
+  background-color: none;
 
-.outer { 
-  /*outline: 1px solid #eee;*/
-  display: table;
-  width: 100%;
- }
-
-.outer-2 { 
-  /*outline: 1px solid #eee;*/
-  display: table;
-  width: 100%;
- }
-
-.outer > h2 {
-  display: table-cell;
-  height:100vh;
-  vertical-align: middle;
-  text-align: center;
-}
-
-.outer > div.row {
-  display: table-cell;
-  height:100vh;
-  vertical-align: middle;
-  /*text-align: center;*/
 }
 
 .about-content {
@@ -89,42 +106,10 @@ blockquote{
   vertical-align: top;
 }
 
-.outer-2 > div.inner-special {
-  display: table-cell;
-  height:90vh;
-  vertical-align: middle;
-  text-align: center;
-}
-
-input {margin-bottom: 10px;}
-
-#blurb { margin-bottom: 15px; }
-
-#projects {}
-
-#about {}
-
-@media (min-width: 768px) { 
-  .feature-modules {
-    max-width:35%;
-    height:auto;
-    border-radius:50%;
-    border: solid;
-  }
-  .three-link-mod {
-    padding:40px;
-  }
-  #blurb {display:none;}
-  
-  body{
-  margin:0 4%;
-  }
-}
-
-
 .feature-modules:hover {
   border:dashed;
   color: #333;
+  background-color: none;
 }
 
 .skill-box{
@@ -139,4 +124,18 @@ input {margin-bottom: 10px;}
   background-color:gray;
   color:white;
   font-weight:bold;
+}
+
+input {margin-bottom: 10px;}
+
+#blurb { margin-bottom: 15px; }
+
+#projects {}
+
+#about {}
+
+#large-image {
+  max-width: 50%;
+  display: block;
+  margin: auto;
 }
