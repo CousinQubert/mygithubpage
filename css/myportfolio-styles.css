@@ -113,26 +113,15 @@ blockquote{
 }
 
 .skill-box{
-  border:solid .5px;
   border-radius:5px;
   height: auto;
   margin-bottom: 1.4em;
   padding: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
 }
-
-.skill-box:hover{
-  background-color:gray;
-  color:white;
-  font-weight:bold;
-}
-
-input {margin-bottom: 10px;}
 
 #blurb { margin-bottom: 15px; }
-
-#projects {}
-
-#about {}
 
 #large-image {
   max-width: 50%;
