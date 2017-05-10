@@ -1,17 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- CDN -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <!-- Link my own css sheet to this document -->
     <link rel="stylesheet" href="css/myportfolio-styles.css">
+    <!-- Link to font -->
     <link href='https://fonts.googleapis.com/css?family=Maven+Pro' rel='stylesheet' type='text/css'>
-    <!-- Latest compiled JS -->
-    <script src="bootstrap/js/bootstrap.min.js"></script>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Jacob M. Nofziger - WebDev</title>
   </head>
   <body>
@@ -19,6 +16,7 @@
       <div class="container">
         <!-- Brand and toggle icon get grouped for better mobile display -->
         <div class="navbar-header">
+            <a class="navbar-brand" href="#">JMNofziger</a>
             <!-- Menu icon -->
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
             <span class="sr-only">Toggle navigation</span>
@@ -29,9 +27,9 @@
               <!-- Brand --></div>
         <div id="bs-example-navbar-collapse-1" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#projects" style="color:#e8d164">Projects</a></li>
-            <li><a href="#experience" style="color:#e8d164">Experience</a></li>
-            <li><a href="#learn-more" style="color:#e8d164">Learn More</a></li>
+            <li><a href="#projects" style="color:#e8d164">See my work</a></li>
+            <li><a href="https://jmnofziger.github.io/journal/" style="color:#e8d164">Read my journal</a></li>
+            <li><a href="#contact" style="color:#e8d164">Get in touch</a></li>
           </ul></div>
       </div>
     </nav>
@@ -42,24 +40,45 @@
           <img class="my-head" alt="jacob-maldonado-nofziger" src="images/jacob-nofziger-linkedin.jpg" />
           <h1>Jacob Maldonado Nofziger</h1>
           <h3>System Administrator</h3>
-          <h4>< Web development, system administration, and the odyssey of continuing studies. /></h4>
+          <h4><i class="fa fa-map-marker" aria-hidden="true"></i> Seattle, Washington</h4>
         </div>
       </div>
 
       <div class="row gray-row">
         <h4 class="section-subtitle">Shalom, it's me Jacob Maldonado Nofziger.</h4>
         <p id="about-content"><a href="http://jmnofziger.github.io/journal/">I like computers, music, and good company.</a> My parents have encouraged me to pursue a career in technology since my youth. They would set up restricted schedules on computer time so that I would learn to crave the computer even more. They would hide the modem so that I'd learn to configure a flash game so that I could play it offline. It all started there. Thanks Mom and Dad.</p>
-        <blockquote class="blockquote-reverse">
-          <p>Jacob, no quiero que te sientes en la computadora esta tarde...</p>
-          <footer>My Mama</footer>
-        </blockquote>
-        <img class="img-responsive" id="large-image" src="images/me-and-mama.jpg" alt="A picture of me and my mama"/>
+        </br>
+        <div class="col-md-offset-2 col-md-8 col-lg-6 col-lg-offset-3">
+          <div class="skill-box">
+            <h4 class="text-center section-title">Origins of Interest</h4>
+            <div class="col-md-offset-1 col-md-10">
+              <blockquote class="blockquote-reverse">
+                <p>Jacobo, no quiero que te sientes en la computadora esta tarde...</p>
+                <footer>My Mama</footer>
+              </blockquote>
+            </div>
+            <div class="row"> 
+              <div class="col-md-offset-2 col-md-4">
+                <figure class="figure">
+                  <img class="img-responsive" id="large-image" src="images/compaq_2.jpg" alt="Legendary Compaq Presario"/>
+                  <figcaption class="figure-caption text-center">The Compaq Presario 5510</figcaption>
+                </figure>
+              </div>
+              <div class="col-md-4 col-md-offset-0">
+                <figure class="figure">
+                  <img class="img-responsive" id="large-image" src="images/me-and-mama.jpg" alt="A picture of me and my mama"/>
+                  <figcaption class="figure-caption text-center">Me and Mama</figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div class="row white-row">
-        <h2 class="text-center" id="projects">< Projects ></h2>
+        <h2 class="text-center section-header" id="projects">< Projects ></h2>
       <!-- Projects content -->
-          <p id="projects-content">I strive to improve my skills outside of work. I have recently started <a href="https://github.com/jmnofziger">tracking those projects on github.</a> </p>
+      <p id="projects-content">I strive to improve my skills outside of work. I have recently started <a href="https://github.com/jmnofziger">tracking those projects on github.</a> </p></br>
           
               <div class="col-md-offset-2 col-md-8 col-lg-4 col-lg-offset-2">
                 <div class="skill-box">
@@ -107,7 +126,7 @@
               </div>
         </div>
       <div class="row gray-row">
-        <h2 class="text-center" id="experience">< Experience ></h2>
+        <h2 class="text-center section-header" id="experience">< Experience ></h2>
           <!-- Work Collage -->
         <div class="col-md-offset-2 col-md-8 col-lg-6 col-lg-offset-3">
           <div class="skill-box">
@@ -164,11 +183,17 @@
 
       <!-- Contact section -->
       <div class="row text-center">
-        <h2 id="learn-more">Contact Me</h2>
+        <h2 id="contact">Contact Me</h2>
         <a href="https://codepen.io/Shredderz/"><img alt="codepen" class="feature-modules" src="images/codepen-256-black.png"/></a>
         <a href="https://www.linkedin.com/in/jacobmnofziger"><img alt="linkedin" class="feature-modules" src="images/linkedin_256.png"/></a>
         <a href="https://github.com/JMNofziger"><img alt="github" class="feature-modules" src="images/github.png"/></a>
       </div>
-    </div>  
+    </div>
+    <!-- CDN for fontawesome icon library -->
+    <script src="https://use.fontawesome.com/aeeacdd5e2.js"></script>
+    <!-- CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Latest compiled JS -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
   </body>
 </html>

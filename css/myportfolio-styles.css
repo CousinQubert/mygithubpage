@@ -45,6 +45,10 @@ p > a:hover {
   text-decoration: none;
 }
 
+.nav>li>a:focus, .nav>li>a:hover{
+  background-color:transparent;
+}
+
 blockquote{
   font-style: italic;
 }
@@ -57,11 +61,21 @@ blockquote{
   }
 }
 
+@media(min-width: 992px){
+  #large-image {
+    max-height: 110px;
+    max-width:100% !important;
+  }
+  figure{
+    margin: 0 !important;
+  }
+}
+
 @media(min-width: 2000px){
   body{margin:0 4%;}
 }
 .blockquote-reverse{
-  border-right:5px solid #f8f8f8;
+  border-right:5px solid #cbcedd;
 }
 
 .row{
@@ -74,7 +88,7 @@ blockquote{
 }
 
 .three-link-mod {}
-.icon-bar,.navbar{background-color: #222534}
+.icon-bar,.navbar{background-color: #222534; margin-bottom:0px;}
 .navbar-toggle,.white-row{
   background-color: #f8f8f8;
 }
@@ -113,6 +127,7 @@ blockquote{
 }
 
 .skill-box{
+  background-color:#f8f8f8;
   border-radius:5px;
   height: auto;
   margin-bottom: 1.4em;
@@ -121,10 +136,22 @@ blockquote{
   transition: 0.3s;
 }
 
+.section-header{
+  margin-bottom:20px;
+}
+
+figure{
+  margin: 1em 40px;
+}
+
+figcaption{
+  font-size:10px;
+}
+
 #blurb { margin-bottom: 15px; }
 
 #large-image {
-  max-width: 50%;
+  max-width:70%;
   display: block;
   margin: auto;
 }
