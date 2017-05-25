@@ -59,14 +59,14 @@
             </div>
             <div class="row"> 
               <div class="col-md-offset-2 col-md-4">
-                <figure class="figure">
-                  <img class="img-responsive" id="large-image" src="images/compaq_2.jpg" alt="Legendary Compaq Presario"/>
+                <figure class="intro-img-fig">
+                  <img class="img-responsive intro-img" src="images/compaq_2.jpg" alt="Legendary Compaq Presario"/>
                   <figcaption class="figure-caption text-center">The Compaq Presario 5510</figcaption>
                 </figure>
               </div>
               <div class="col-md-4 col-md-offset-0">
-                <figure class="figure">
-                  <img class="img-responsive" id="large-image" src="images/me-and-mama.jpg" alt="A picture of me and my mama"/>
+                <figure class="intro-img-fig">
+                  <img class="img-responsive intro-img" src="images/me-and-mama.jpg" alt="A picture of me and my mama"/>
                   <figcaption class="figure-caption text-center">Me and Mama</figcaption>
                 </figure>
               </div>
@@ -124,6 +124,11 @@
                   </ul>
                 </div>
               </div>
+        </div>
+        <div class="row white-row">
+          <div class="col-xs-8 col-xs-offset-2 col-md-6 col-md-offset-3 gh-card">
+            <div class="github-card user-card" data-user="jmnofziger"></div>
+          </div>
         </div>
       <div class="row gray-row">
         <h2 class="text-center section-header" id="experience">< Experience ></h2>
@@ -183,17 +188,43 @@
 
       <!-- Contact section -->
       <div class="row text-center">
-        <h2 id="contact">Contact Me</h2>
-        <a href="https://codepen.io/Shredderz/"><img alt="codepen" class="feature-modules" src="images/codepen-256-black.png"/></a>
-        <a href="https://www.linkedin.com/in/jacobmnofziger"><img alt="linkedin" class="feature-modules" src="images/linkedin_256.png"/></a>
-        <a href="https://github.com/JMNofziger"><img alt="github" class="feature-modules" src="images/github.png"/></a>
+        <div class="col-xs-offset-1 col-xs-10 col-lg-4 col-lg-offset-4">
+          <h2 id="contact">Contact Me</h2>
+          <div class="skill-box contact-card">
+            <figure itemscope="" itemtype="https://schema.org/Person">
+              <!-- Image -->
+              <img itemprop="image" class="contact-card__head" src="https://lh3.googleusercontent.com/Dw_KNeMeNWVTttjb-202OAxseWKAzffcHYwj0sq0Sp7goPPb45FwLJiO6mo8bharQ189DmhBaqoDudeLrdb_yFnCOB6gulXcz7O-QJnUhpBpU8UsXlT8tE9x7vEygmsXGg3Beb8=w755-h765-no" alt="Jacob M.N."> 
+              <p itemprop="name" class="contact-name">Jacob Maldonado Nofziger</p> 
+              <p itemprop="jobTitle" class="contact-title">System Administrator | Web Developer</p> 
+              <!-- Email -->
+              <div itemprop="email" class="contact-card__link"> 
+                <i class="fa fa-envelope-o"></i><a href="mailto:jacob.nofziger@gmail.com">jacob.nofziger@gmail.com</a></br>
+              </div> 
+              <!-- Phone -->
+              <div itemprop="telephone" class="contact-card__link">
+                <i class="fa fa-phone"></i><a href="tel:317735-6583">(317)-735-6583</a></br> 
+              </div> 
+              <!-- Location -->
+              <div itemprop="workLocation">
+                <i class="fa fa-map-marker"></i>Seattle, Washington
+              </div> 
+            </figure>
+          </div>
+        </div>
+      </div>
+      <div class="row text-center">
+          <a href="https://codepen.io/jmnofziger/"><img alt="codepen" class="feature-modules" src="images/codepen-256-black.png"/></a>
+          <a href="https://www.linkedin.com/in/jacobmnofziger"><img alt="linkedin" class="feature-modules" src="images/linkedin_256.png"/></a>
+          <a href="https://github.com/JMNofziger"><img alt="github" class="feature-modules" src="images/github.png"/></a>
       </div>
     </div>
+    <!-- CDN for widget js - needed for GH card gen -->
+    <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
     <!-- CDN for fontawesome icon library -->
     <script src="https://use.fontawesome.com/aeeacdd5e2.js"></script>
-    <!-- CDN -->
+    <!-- CDN for JQ -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <!-- Latest compiled JS -->
+    <!-- CDN for BS latest JS -->
     <script src="bootstrap/js/bootstrap.min.js"></script>
   </body>
 </html>

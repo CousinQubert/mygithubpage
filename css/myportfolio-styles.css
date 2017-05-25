@@ -53,6 +53,10 @@ blockquote{
   font-style: italic;
 }
 
+div.gh-card {
+  text-align:center;
+  padding:0px;
+}
 
 @media (max-width: 830px) { 
   h1,h2,h3,h4,p,blockquote{
@@ -62,11 +66,11 @@ blockquote{
 }
 
 @media(min-width: 992px){
-  #large-image {
+  .intro-img {
     max-height: 110px;
     max-width:100% !important;
   }
-  figure{
+  .intro-img-fig{
     margin: 0 !important;
   }
 }
@@ -92,8 +96,42 @@ blockquote{
 .navbar-toggle,.white-row{
   background-color: #f8f8f8;
 }
+
 .my-head {
   max-width:200px;
+  height:auto;
+  border-radius:50%;
+  box-shadow: 0px 4px 6px 2px lightgrey;
+}
+
+.contact-name{
+  margin-top:10px;
+}
+
+.contact-title{
+  margin-top: -15px;
+  color: #666;
+  font-size: 10px;
+}
+
+.contact-card__link a {
+  padding: 4px;
+  color: #333;
+  cursor: pointer;
+}
+
+.contact-card__link a:hover {
+  color: #e8d164;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.fa {
+  margin:0 5px;
+}
+
+.contact-card__head {
+  max-width:130px;
   height:auto;
   border-radius:50%;
   box-shadow: 0px 4px 6px 2px lightgrey;
@@ -140,7 +178,7 @@ blockquote{
   margin-bottom:20px;
 }
 
-figure{
+.intro-img-fig{
   margin: 1em 40px;
 }
 
@@ -150,7 +188,7 @@ figcaption{
 
 #blurb { margin-bottom: 15px; }
 
-#large-image {
+.intro-img {
   max-width:70%;
   display: block;
   margin: auto;
